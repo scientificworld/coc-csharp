@@ -29,10 +29,15 @@
       "type": "object",
       "title": "coc-csharp configuration",
       "properties": {
-        "csharp.enabled": {
+        "csharp.enable": {
           "type": "boolean",
           "default": true,
           "description": "Enable coc-csharp extension"
+        },
+        "csharp.ls.path": {
+          "type": "string",
+          "default": "csharp-ls",
+          "description": "Specify the path of csharp-ls"
         }
       }
     }
