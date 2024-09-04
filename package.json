@@ -1,6 +1,6 @@
 {
   "name": "coc-csharp",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "C# integration of coc.nvim",
   "author": "scientificworld",
   "license": "MIT",
@@ -22,25 +22,19 @@
     "typescript": "^5.3.3"
   },
   "activationEvents": [
-    "*"
+    "onLanguage:cs"
   ],
   "contributes": {
     "configuration": {
       "type": "object",
       "title": "coc-csharp configuration",
       "properties": {
-        "coc-csharp.enabled": {
+        "csharp.enabled": {
           "type": "boolean",
           "default": true,
           "description": "Enable coc-csharp extension"
         }
       }
-    },
-    "commands": [
-      {
-        "command": "coc-csharp.Command",
-        "title": "coc-csharp command title"
-      }
-    ]
+    }
   }
 }

@@ -4,15 +4,22 @@ C# integration of coc.nvim
 
 ## Install
 
-`:CocInstall coc-csharp`
+Install [csharp-ls](https://github.com/razzmatazz/csharp-language-server) first, then `:CocInstall coc-csharp`.
 
-## Keymaps
+## Configuration
 
-`nmap <silent> <C-l> <Plug>(coc-coc-csharp-keymap)`
+- `csharp.enable`: When set to false, the extension will be disabled. Default: `true`
+- `csharp.ls.path`: Specify the path of the language server. Default: `csharp-ls`
 
-## Lists
+## Note
 
-`:CocList demo_list`
+This extension is still in alpha phase, some functions may be missing.
+
+Known issues:
+
+- Some messages will be displayed at the bottom when starting. I tried to intercept `window/showMessage`, but it doesn't work perfectly.
+
+PRs Welcome!
 
 ## License
 
